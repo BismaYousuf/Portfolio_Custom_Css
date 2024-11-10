@@ -33,8 +33,8 @@ const Contact = () => {
           </div>
 
           <div className={styles.contactForm}>
-            <h2 className={styles.contactFormHeading}>Let's Connect</h2>
-            <p className={styles.contactFormText}>Send me a message and let's schedule a call!</p>
+            <h2 className={styles.contactFormHeading}>Let&apos;s Connect</h2>
+            <p className={styles.contactFormText}>Send me a message and let&apos;s schedule a call!</p>
 
             <form className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
