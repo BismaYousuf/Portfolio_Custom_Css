@@ -1,0 +1,116 @@
+/* customs.module.css */
+
+/* General styling */
+.textWhite {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Desktop Navigation */
+  .desktopNavContainer {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  
+  .navLinksList {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  .navLinkItem {
+    position: relative;
+  }
+  
+  .navLinkText {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .navLinkText:hover {
+    color: white;
+  }
+  
+  .navLinkUnderline {
+    width: 0;
+    height: 1px;
+    background-color: #ff7f00;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navLinkItem:hover .navLinkUnderline {
+    width: 100%;
+  }
+  
+  /* Contact Me link styling */
+  .contactLink {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+  }
+  
+  .contactLinkHover {
+    position: relative;
+  }
+  
+  .contactLinkHover .firstLine,
+  .contactLinkHover .secondLine {
+    width: 66%;
+    height: 1px;
+    transition: width 0.3s ease-out;
+    background-color: #ff7f00;
+    border-radius: 50%;
+  }
+  
+  .contactLinkHover .secondLine {
+    background-color: #f97316;
+  }
+  
+  .contactLinkHover:hover .firstLine,
+  .contactLinkHover:hover .secondLine {
+    width: 100%;
+  }
+  
+  /* Mobile Navigation */
+  .mobileNavToggle {
+    display: block;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 50;
+  }
+  
+  .mobileNavMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 40;
+    padding-top: 6rem;
+    text-align: center;
+  }
+  
+  .mobileNavLinksList {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-top: 6rem;
+    gap: 2rem;
+  }
+  
+  .mobileNavLinkItem {
+    padding: 0.5rem;
+  }
+  

@@ -1,0 +1,87 @@
+/* customs.module.css */
+.aboutContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heading span {
+    color: #f97316; /* Orange */
+  }
+  
+  .gridContainer {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1.5rem;
+    place-items: center;
+  }
+  
+  .card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .cardOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #f97316, #7e3b75, #f97316);
+    opacity: 0.3;
+    animation: gradient-xy 3s infinite;
+  }
+  
+  .cardContent {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+  }
+  
+  .cardImage {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .cardText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  
+  .cardText h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .cardText p {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0.5rem;
+  }
+  
+  /* Keyframe for the gradient animation */
+  @keyframes gradient-xy {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  
+  

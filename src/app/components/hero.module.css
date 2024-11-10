@@ -1,0 +1,63 @@
+/* Hero.module.css */
+.heroContainer {
+    padding-top: 6rem;
+    position: relative;
+    overflow: clip;
+    background: linear-gradient(to bottom, #000, #291942 35%, #8f5c55 60%, #dbaf6e 80%);
+  }
+  
+  .heroOverlay {
+    position: absolute;
+    border-radius: 50%;
+    width: 3000px;
+    height: 1300px;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(closest-side, rgba(0, 0, 0, 0.8), #2b1942);
+  }
+  
+  .heroTextWrapper {
+    position: relative;
+    text-align: center;
+  }
+  
+  .heroHeading {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .heroPrimaryText {
+    color: #9884ce;
+  }
+  
+  .heroSecondaryText {
+    color: #e48a57;
+  }
+  
+  .heroIcon {
+    position: absolute;
+    top: 170px;
+    left: 250px;
+  }
+  
+  .heroIcon2 {
+    position: absolute;
+    top: 20px;
+    right: 220px;
+  }
+  
+  .heroDescription {
+    font-size: 1.25rem;
+    max-width: 500px;
+    margin: 2rem auto 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .heroImage {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+  }
+  

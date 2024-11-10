@@ -1,0 +1,82 @@
+/* contact.module.css */
+.contactContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #000000;
+  }
+  
+  .contactGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .contactGridItem {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .contactText {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.25rem;
+  }
+  
+  .contactForm {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 550px;
+  }
+  
+  .contactFormHeading {
+    font-size: 2.5rem;
+    color: #f97316;
+    margin-bottom: 1rem;
+  }
+  
+  .contactFormText {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+  }
+  
+  .contactInput {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    color: white;
+    border: none;
+  }
+  
+  .contactInput:focus {
+    outline: none;
+    border: 2px solid #f97316;
+  }
+  
+  .contactButton {
+    background-color: #f97316;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .contactButton:hover {
+    background-color: #ea580c;
+  }
+  
