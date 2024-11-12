@@ -80,37 +80,20 @@
   }
   
   /* Mobile Navigation */
+.mobileNavToggle {
+  display: block;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: 50;
+}
+
+@media (min-width: 768px) {
   .mobileNavToggle {
-    display: block;
-    position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    padding: 0.5rem;
-    color: rgba(255, 255, 255, 0.7);
-    z-index: 50;
+    display: none; /* Hide on desktop view */
   }
-  
-  .mobileNavMenu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 40;
-    padding-top: 6rem;
-    text-align: center;
-  }
-  
-  .mobileNavLinksList {
-    font-size: 2.25rem;
-    font-weight: 600;
-    margin-top: 6rem;
-    gap: 2rem;
-  }
-  
-  .mobileNavLinkItem {
-    padding: 0.5rem;
-  }
-  
+}
