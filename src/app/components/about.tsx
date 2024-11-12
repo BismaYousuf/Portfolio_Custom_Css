@@ -31,7 +31,7 @@ const About = () => {
             <Image src={'/pics/finance.png'} alt={'finance'} width={130} height={130} className={styles.cardImage} />
             <div className={styles.cardText}>
               <h2>Finance</h2>
-              <p>I approach challenges with a logical and systematic mindset.</p>
+              <p>I approach challenges with a logical and systematic mindset.Building wealth through savings accounts, stocks, bonds, and other investments.</p>
             </div>
           </div>
         </div>
