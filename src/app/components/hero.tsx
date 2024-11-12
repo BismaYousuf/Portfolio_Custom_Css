@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import styles from './Hero.module.css'; // Importing the CSS Module
+import styles from './hero.module.css'
 
 const Hero = () => {
   return (
