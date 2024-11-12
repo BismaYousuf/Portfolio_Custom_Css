@@ -1,63 +1,138 @@
 /* Hero.module.css */
 .heroContainer {
-    padding-top: 6rem;
-    position: relative;
-    overflow: clip;
-    background: linear-gradient(to bottom, #000, #291942 35%, #8f5c55 60%, #dbaf6e 80%);
-  }
-  
-  .heroOverlay {
-    position: absolute;
-    border-radius: 50%;
-    width: 3000px;
-    height: 1300px;
-    top: 550px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: radial-gradient(closest-side, rgba(0, 0, 0, 0.8), #2b1942);
-  }
-  
-  .heroTextWrapper {
-    position: relative;
-    text-align: center;
-  }
-  
+  padding-top: 6rem;
+  position: relative;
+  overflow: hidden; /* Changed from 'clip' for better control */
+  background: linear-gradient(to bottom, #000, #291942 35%, #8f5c55 60%, #dbaf6e 80%);
+}
+
+.heroOverlay {
+  position: absolute;
+  border-radius: 50%;
+  width: 3000px;
+  height: 1300px;
+  top: 550px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(0, 0, 0, 0.8), #2b1942);
+}
+
+.heroTextWrapper {
+  position: relative;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.heroHeading {
+  font-size: 3rem; /* Adjusted for smaller screens */
+  font-weight: bold;
+}
+
+.heroPrimaryText {
+  color: #9884ce;
+}
+
+.heroSecondaryText {
+  color: #e48a57;
+}
+
+.heroIcon {
+  position: absolute;
+  top: 170px;
+  left: 250px;
+}
+
+.heroIcon2 {
+  position: absolute;
+  top: 20px;
+  right: 220px;
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.heroImage {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
   .heroHeading {
-    font-size: 4rem;
-    font-weight: bold;
+    font-size: 3.5rem;
   }
-  
-  .heroPrimaryText {
-    color: #9884ce;
-  }
-  
-  .heroSecondaryText {
-    color: #e48a57;
+
+  .heroOverlay {
+    width: 2000px;
+    height: 1000px;
+    top: 400px;
   }
   
   .heroIcon {
-    position: absolute;
-    top: 170px;
-    left: 250px;
+    top: 140px;
+    left: 180px;
   }
-  
+
   .heroIcon2 {
-    position: absolute;
-    top: 20px;
-    right: 220px;
+    top: 10px;
+    right: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroHeading {
+    font-size: 2.5rem;
+  }
+
+  .heroOverlay {
+    width: 1500px;
+    height: 800px;
+    top: 300px;
   }
   
+  .heroIcon {
+    top: 120px;
+    left: 100px;
+  }
+
+  .heroIcon2 {
+    top: 0;
+    right: 100px;
+  }
+
   .heroDescription {
-    font-size: 1.25rem;
-    max-width: 500px;
-    margin: 2rem auto 0;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
   }
-  
-  .heroImage {
-    display: block;
-    margin: 0 auto;
-    width: auto;
-    height: auto;
+}
+
+@media (max-width: 480px) {
+  .heroHeading {
+    font-size: 2rem;
   }
-  
+
+  .heroOverlay {
+    width: 1000px;
+    height: 600px;
+    top: 200px;
+  }
+
+  .heroIcon {
+    top: 100px;
+    left: 50px;
+  }
+
+  .heroIcon2 {
+    right: 50px;
+  }
+
+  .heroDescription {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+}
