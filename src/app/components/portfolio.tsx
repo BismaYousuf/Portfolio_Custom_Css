@@ -6,11 +6,11 @@ import styles from './portfolio.module.css'; // Import the CSS Module
 
 const project = [
   {
-    title: "Beauty Bar Saloon",
+    title: "Foodtuck",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam labore veritatis laboriosam similique. Ullam iste quia dolor rem laborum.",
-    devStack: "HTML, CSS, REACT, NEXTJS",
-    link: "https://class-assisgnment-4-and-5-d9hj.vercel.app/",
-    git: "https://github.com/BismaYousuf/class_Assisgnment-4-and-5",
+    devStack: "REACT, NEXTJS, TAILWIND CSS",
+    link: "https://ui-ux-hackathon-nine-rust.vercel.app/",
+    git: "https://github.com/BismaYousuf/UI-UX-hackathon",
     src: "/pics/project2.png"
   },
   {
@@ -50,7 +50,7 @@ const Portfolio = () => {
           >
             <div className={styles.projectDetails}>
               <h2 className="text-7xl my-4 text-white/70">{`0${index + 1}`}</h2>
-              <h2 className="text-4xl">{project.title}</h2>
+              <h2 className="text-4xl text-white">{project.title}</h2>
               <p className={styles.projectDesc}>{project.desc}</p>
               <p className={styles.projectStack}>{project.devStack}</p>
 

@@ -1,13 +1,21 @@
 "use client";
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare,} from 'react-icons/fa';
 import styles from './skill.module.css'; // Import the CSS Module
+import {RiNextjsFill, RiTailwindCssFill  } from "react-icons/ri";
+import { SiTypescript, SiSanity } from "react-icons/si";
+
+
 
 const skillIcons = [
     { icon: <FaHtml5 className={styles.skillItemIcon} size={140} />, label: "HTML" },
     { icon: <FaCss3Alt className={styles.skillItemIcon} size={140} />, label: "CSS" },
     { icon: <FaJsSquare className={styles.skillItemIcon} size={140} />, label: "JavaScript" },
-    { icon: <FaReact className={styles.skillItemIcon} size={110} />, label: "React" }
+    { icon: <FaReact className={styles.skillItemIcon} size={110} />, label: "React" },
+    { icon: <RiNextjsFill className={styles.skillItemIcon} size={140} />, label: "Next Js"},
+    { icon: <RiTailwindCssFill className={styles.skillItemIcon} size={140} />, label: "Tailwind Css"},
+    { icon: <SiTypescript className={styles.skillItemIcon} size={140} />, label: "TypeScript"},
+    { icon: <SiSanity className={styles.skillItemIcon} size={140} />, label: "Sanity"},
 ];
 
 const Skills = () => {
