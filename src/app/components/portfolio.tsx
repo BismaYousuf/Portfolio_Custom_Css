@@ -7,10 +7,10 @@ import styles from './portfolio.module.css'; // Import the CSS Module
 const project = [
   {
     title: "Foodtuck",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam labore veritatis laboriosam similique. Ullam iste quia dolor rem laborum.",
+    desc: "The FoodTuck Marketplace is a comprehensive e-commerce platform designed to connect buyers with high-quality food and restaurant supplies. ",
     devStack: "REACT, NEXTJS, TAILWIND CSS",
-    link: "https://ui-ux-hackathon-nine-rust.vercel.app/",
-    git: "https://github.com/BismaYousuf/UI-UX-hackathon",
+    link: "https://my-hackathone-3-x3yv.vercel.app/",
+    git: "https://github.com/BismaYousuf/MY-Hackathone-3-",
     src: "/pics/project2.png"
   },
   {
